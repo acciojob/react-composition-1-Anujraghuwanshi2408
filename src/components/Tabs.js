@@ -3,25 +3,25 @@ import React , {useState} from "react";
 
 
 const Tab = ({tabs}) => {
-    console.log(tabs)
+    // console.log(tabs)
  const [tabClicked  , setTabClicked] = useState("")
 
     function handleClick(value){
        setTabClicked(value)
     }
     return(
-        <div> 
-            <h1> heloo</h1>  
+        <div>  
             <ul>
                 {
                     tabs.map((value) =>
-                        <li onClick={()=>handleClick(value.title)}>{value.content}</li>
+                    (<li onClick={()=>handleClick(value.titles)}>{value.contents}</li>)
+                        
                 
                 )
                 }
             </ul>
               {
-                 tabClicked && <p>This is the content for {tabClicked}</p>
+                 tabClicked && <p>This is the content for {tabClicked}.</p>
               }
         </div>
     )

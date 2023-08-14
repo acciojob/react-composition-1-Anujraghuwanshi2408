@@ -4,9 +4,9 @@ import './../styles/App.css';
 import Tab from './Tabs'
 
 let tabs = [
-  {title:"Tab1" , content:"Tab1"},
-  {title:"Tab2" , content:"Tab2"},
-  {title:"Tab3" , content:"Tab3"}]
+  {titles:"Tab1" , contents:"Tab1"},
+  {titles:"Tab2" , contents:"Tab2"},
+  {titles:"Tab3" , contents:"Tab3"}]
 const App = () => {
   return (
     <div> 
