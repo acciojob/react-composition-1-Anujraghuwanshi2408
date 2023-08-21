@@ -5,7 +5,7 @@ import React , {useState} from "react";
 const Tab = ({tabs}) => {
     // console.log(tabs)
  const [tabClicked  , setTabClicked] = useState("")
-
+ 
     function handleClick(value){
        setTabClicked(value)
     }
